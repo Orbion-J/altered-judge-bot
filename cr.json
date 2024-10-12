@@ -1,0 +1,81 @@
+{ 
+	"RULES" : {
+		"1" : { "NAME" : "Overview" , "CONTENT" : {
+			"1.1" : { "NAME" : "General" , "CONTENT" : {
+				"1.1.1" : { "NAME" : "This document" , "CONTENT" : {
+					"1.1.1.a" : "The Altered Comprehensive Rules is an expert document meant to resolve the thornier cases that can occur when {cards} interact in unexpected ways. They are not meant to learn the rules of {Altered}." ,
+					"1.1.1.b" : "It is not expected that players know the content of this document. However, reading the first section and particularly Subsection 1.4 \"Golden Rules\" should help solve most questions" ,
+					"1.1.1.c" : "Each numbered paragraph from Section 2 \"Objects\" onwards is a {rule}." ,
+					"1.1.1.d" : "Remarks and examples, written in italics are not {rules}. They are meant to clarify the meaning of the {rules}."
+				} } ,
+				"1.1.2" : { "NAME" : "Scope" , "CONTENT" : {
+					"1.1.2.a" : "These {rules} apply to any two-player game of {Altered}." ,
+					"1.1.2.b" : "If other official documents contradict these {rules}, the other documents take precedence."
+				} } ,
+				"1.1.3" : { "NAME" : "Collectible card Game" , "CONTENT" : {
+					"1.1.3.a" : "{Altered} is a collectible card game: {players} do not play with {cards} from a common pool, but from their own collection." ,
+					"1.1.3.b" : "In order to play a game of {Altered}, each player needs a deck of {Altered} {cards} (not to be confused with the {Deck zone} during play)." ,
+					"1.1.3.c" : "For the purpose of the {rules}, a player is the {owner} of the {cards} in their deck, regardless of legal ownership. Nothing in the game can change the owner of a {card}."
+				} } ,
+				"1.1.4" : { "NAME" : "Constructed play" , "CONTENT" : {
+					"1.1.4.a" : "In constructed play, a player may use any {card} from their collection to build their deck." ,
+					"1.1.4.b" : "A constructed deck must include exactly 1 {Hero}." ,
+					"1.1.4.c" : "A constructed deck must include at least 39 other {cards}." ,
+					"1.1.4.d" : "A constructed deck can only include {cards} of the same {faction} as its {Hero}." ,
+					"1.1.4.e" : "A constructed deck can include at most 3 {cards} with the same {name}." ,
+					"1.1.4.f" : "A constructed deck can include at most 15 rare (%rare%) {cards}." ,
+					"1.1.4.g" : "A constructed deck can include at most 3 unique (%unique%) {cards}."
+				} } ,
+				"1.1.5" : { "NAME" : "Limited play" , "CONTENT" : {
+					"1.1.5.a" : "In limited play, players must build their deck from a restricted pool of {cards} provided to them for a specific event, plus any number of Mana Convergence." ,
+					"1.1.5.b" : "A limited deck can include at most 1 {Hero}." ,
+					"1.1.5.c" : "A limited deck must include at least 29 other {cards}." ,
+					"1.1.5.d" : "A limited deck can include {cards} from at most 3 {factions}; if that deck include a {Hero}, that Hero’s {faction} counts as one of the three."
+				} } ,
+				"1.1.6" : { "NAME" : "Numbers and symbols" , "CONTENT" : {
+					"1.1.6.a" : "When the game uses a number, it is always an integer." ,
+					"1.1.6.b" : "If an event requires a division, it will precise whether to round up or down." ,
+					"1.1.6.c" : "If an event would need to divide a number by 0, that event cannot happen." ,
+					"1.1.6.d" : "If a calculation uses a missing number (e.g. the {statistics} of a non-{Character} {card}), it uses zero instead." ,
+					"1.1.6.e" : "The symbol %j% means \"When I join the Expedition zone—\"." ,
+					"1.1.6.f" : "The symbol %h% means \"When I am played from Hand—\"." ,
+					"1.1.6.g" : "The symbol %r% means \"When I am played from Reserve—\"." ,
+					"1.1.6.h" : "The symbol %T% means \"{exhaust} me\"" ,
+					"1.1.6.i" : "The symbol %D% means \"Discard me from {Reserve}\"" ,
+					"1.1.6.j" : "A white [number] in a black or yellow circle (%1%, %2%, ...) in a {cost} means \"Pay [that number] mana\"."
+				} } ,
+				"1.1.7" : { "NAME" : "Material" , "CONTENT" : {
+					"1.1.7.a" : "Each {player} start the game with a deck of {Altered} {cards}. They should be officially printed {Altered} {cards} with a valid QR code pointing to `https://www.altered.gg`. For the purpose of the rules, the text of a {card} is the English text appearing on the {Altered} website. Note that the text appearing on the physical card may differ, if the card is printed in a different language or without text. It may also have received errata since it first printing." ,
+					"1.1.7.b" : "{Tokens} are used to represent {Characters} which are created by game rather than represented by {Cards}. Players must have a way of representing the {tokens} that their deck can create in a way that makes clear their {characteristics} and {status}. It is possible, but not mandatory, to use the oﬀicial {tokens} published by Equinox." ,
+					"1.1.7.c" : "{Counters} are markers put on {cards} by {events} in the game. Players should have a way of representing {counters} which make clear which counters are on which {objects}. Counters with the same name are indistinguishable." ,
+					"1.1.7.d" : "If a {player}'s deck has cards that ask them to \"roll a die\", they should have fair six-sided dice numbered from 1 to 6." ,
+					"1.1.7.e" : "{Players} should have a way to represent the {status} of their {objects} in all {visible} {zones}. The {Exhausted} {status} is usually represented by laying the {object} in a vertical or horizontal direction. Other statuses may be represented by printed or coloured markers." ,
+					"1.1.7.f" : "Between the two of them, players need a {Hero Region} {Card}, a {Companion Region} {Card}, and three different {Tumult cards} (one %V% | %M% %O%, one %M% | %V% %O%, and one %O% | %V% %M%) to represent the {Adventure}."
+				} }
+			} } ,
+			"1.2" : { "NAME" : "Game concepts" , "CONTENT" : {
+				"1.2.1" : { "NAME" : "{Players}" , "CONTENT" : {
+					"1.2.1.a" : "A {player} is a participant in a game of {Altered}." ,
+					"1.2.1.b" : "In a two-{player} game, each {player} is the other’s {opponent}." ,
+					"1.2.1.c" : "Each player in a game of {Altered} needs to have their own deck." ,
+					"1.2.1.d" : "Each player has a number of private {zones} in the game: {Deck}, {Discard pile}, {Hand}, {Hero zone}, {Landmark zone}, {Mana zone}, and {Reserve}."
+				} } ,
+				"1.2.2" : { "NAME" : "{Objects}" , "CONTENT" : {
+					"1.2.2.a" : "{Objects} are the game pieces of {Altered}." , 
+					"1.2.2.b" : "Most things in a game of {Altered} are either {objects}, properties of {objects} or sets of {objects}." ,
+					"1.2.2.c" : "{Objects} have {characteristics}:\n- {Type} ({Character}, {Emblem}, {Hero}, {Permanent}, {Region}, {Spell})\n- {Sub-type}\n- {Name}\n- {Rarity} (common %common%, rare %rare%, unique %unique%)\n- {Version}\n- {Hand Cost}\n- {Reserve cost}\n- {Faction} ({Axiom} %axiom%, {Bravos} %bravos%, {Lyra} %lyra%, {Muna} %muna%, {Ordis} %ordis%, {Yzmir} %yzmir%)\n- {Statistics} (one number for each of %V%, %M%, %O%)\n- {Abilities}\n- {Reserve limit} (only for {Heroes})\n- {Landmark limit} (only for {Heroes})\n- {Duration} (only for {Emblems})" ,
+					"1.2.2.d" : "An {object} may lack some of these {characteristics}."
+				} }
+
+			} }
+		} }
+	} ,
+	"GLOSSARY" : {
+		"Ability" : {
+			"DESCRIPTION" : "Object properties described in the text box; abilities are either {quick actions}, {reactions}, {modifiers}, or {effects}." , 
+			"RELATED" : [ "0.0.0", "1.2.2", "1.2.4", "2.1.0", "2.2.10", "2.4.6", "6.3.0", "7.2.1", "7.3.1", "7.3.3", "7.5.1", "7.5.5" ]		
+		} 
+	} ,
+	"VERSION" :	"Version 1.0 - September 3rd, 2024",
+	"ABOUT" : "This document is the reference for the rules of the Altered Trading Card Game, which is edited by Equinox. It is not meant as a way to learn playing. Newer player should look for the \"Quick Rules\" at `https://www.altered.gg/downloads`. New editions of the Comprehensive Rules are released on a regular basis. You can find the latest version at `https://www.altered.gg/downloads`"
+}

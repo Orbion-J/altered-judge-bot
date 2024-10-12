@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="9.890625"
+   height="15.078126"
+   viewBox="0 0 9.890625 15.078127"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath321">
+      <path
+         d="M 0,0 H 2479.9805 V 3508.0078 H 0 Z"
+         transform="matrix(0.31999999,0,0,0.31999999,-513.99998,-789.99997)"
+         clip-rule="evenodd"
+         id="path321" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffff00" />
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1"
+     transform="translate(-518.65625,-773.82813)">
+    <path
+       id="path320"
+       d="m 13.187522,-1.0937171 c 0.425781,0 0.757812,-0.125 1,-0.375 0.238281,-0.2500001 0.359375,-0.5781251 0.359375,-0.9843751 v -5.9218752 c 0,0 0,-2.1406256 0,-6.4218756 0,-0.351562 -0.136719,-0.671875 -0.40625,-0.953125 -0.273438,-0.28125 -0.589844,-0.421875 -0.953125,-0.421875 H 6.0156467 c -0.3671875,0 -0.6835938,0.140625 -0.9531251,0.421875 -0.2734375,0.28125 -0.40625,0.601563 -0.40625,0.953125 v 12.3437508 c 0,0.34375 0.1328125,0.65625 0.40625,0.9375001 0.2695313,0.28125 0.5859376,0.421875 0.9531251,0.421875 z M 10.578147,-11.984343 h 1.765625 l -1.828125,3.2812506 1.953125,3.7031251 H 10.703147 L 9.6093968,-7.5155924 8.5000218,-4.9999673 H 6.6718967 L 8.7187718,-8.6405924 6.7812717,-11.984343 h 1.8437501 l 0.984375,2.2812505 z m -0.9687502,2.2812505 z m 0,2.1875001 z m -0.890625,-1.125 z m 1.7968752,-0.078125 v 0.015625 z m 0,0"
+       style="fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       aria-label=""
+       transform="translate(513.99998,789.99997)"
+       clip-path="url(#clipPath321)" />
+  </g>
+</svg>
