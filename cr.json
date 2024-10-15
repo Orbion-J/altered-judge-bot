@@ -3,72 +3,336 @@
 		"1" : { "NAME" : "Overview" , "CONTENT" : {
 			"1.1" : { "NAME" : "General" , "CONTENT" : {
 				"1.1.1" : { "NAME" : "This document" , "CONTENT" : {
-					"1.1.1.a" : "The Altered Comprehensive Rules is an expert document meant to resolve the thornier cases that can occur when {cards} interact in unexpected ways. They are not meant to learn the rules of {Altered}." ,
-					"1.1.1.b" : "It is not expected that players know the content of this document. However, reading the first section and particularly Subsection 1.4 \"Golden Rules\" should help solve most questions" ,
-					"1.1.1.c" : "Each numbered paragraph from Section 2 \"Objects\" onwards is a {rule}." ,
-					"1.1.1.d" : "Remarks and examples, written in italics are not {rules}. They are meant to clarify the meaning of the {rules}."
+					"1.1.1.a" : { "RULE" : "The Altered Comprehensive Rules is an expert document meant to resolve the thornier cases that can occur when {cards} interact in unexpected ways. They are not meant to learn the rules of {Altered}." } ,
+					"1.1.1.b" : { "RULE" : "It is not expected that players know the content of this document. However, reading the first section and particularly Subsection 1.4 \"Golden Rules\" should help solve most questions" } ,
+					"1.1.1.c" : { "RULE" : "Each numbered paragraph from Section 2 \"Objects\" onwards is a {rule}." } ,
+					"1.1.1.d" : { "RULE" : "Remarks and examples, written in italics are not {rules}. They are meant to clarify the meaning of the {rules}." }
 				} } ,
 				"1.1.2" : { "NAME" : "Scope" , "CONTENT" : {
-					"1.1.2.a" : "These {rules} apply to any two-player game of {Altered}." ,
-					"1.1.2.b" : "If other official documents contradict these {rules}, the other documents take precedence."
+					"1.1.2.a" : { "RULE" : "These {rules} apply to any two-player game of {Altered}." } ,
+					"1.1.2.b" : { "RULE" : "If other official documents contradict these {rules}, the other documents take precedence." }
 				} } ,
 				"1.1.3" : { "NAME" : "Collectible card Game" , "CONTENT" : {
-					"1.1.3.a" : "{Altered} is a collectible card game: {players} do not play with {cards} from a common pool, but from their own collection." ,
-					"1.1.3.b" : "In order to play a game of {Altered}, each player needs a deck of {Altered} {cards} (not to be confused with the {Deck zone} during play)." ,
-					"1.1.3.c" : "For the purpose of the {rules}, a player is the {owner} of the {cards} in their deck, regardless of legal ownership. Nothing in the game can change the owner of a {card}."
+					"1.1.3.a" : { "RULE" : "{Altered} is a collectible card game: {players} do not play with {cards} from a common pool, but from their own collection." } ,
+					"1.1.3.b" : { "RULE" : "In order to play a game of {Altered}, each player needs a deck of {Altered} {cards} (not to be confused with the {Deck zone} during play)." } ,
+					"1.1.3.c" : { "RULE" : "For the purpose of the {rules}, a player is the {owner} of the {cards} in their deck, regardless of legal ownership. Nothing in the game can change the owner of a {card}." }
 				} } ,
 				"1.1.4" : { "NAME" : "Constructed play" , "CONTENT" : {
-					"1.1.4.a" : "In constructed play, a player may use any {card} from their collection to build their deck." ,
-					"1.1.4.b" : "A constructed deck must include exactly 1 {Hero}." ,
-					"1.1.4.c" : "A constructed deck must include at least 39 other {cards}." ,
-					"1.1.4.d" : "A constructed deck can only include {cards} of the same {faction} as its {Hero}." ,
-					"1.1.4.e" : "A constructed deck can include at most 3 {cards} with the same {name}." ,
-					"1.1.4.f" : "A constructed deck can include at most 15 rare (%rare%) {cards}." ,
-					"1.1.4.g" : "A constructed deck can include at most 3 unique (%unique%) {cards}."
+					"1.1.4.a" : { "RULE" : "In constructed play, a player may use any {card} from their collection to build their deck." } ,
+					"1.1.4.b" : { "RULE" : "A constructed deck must include exactly 1 {Hero}." } ,
+					"1.1.4.c" : { "RULE" : "A constructed deck must include at least 39 other {cards}." } ,
+					"1.1.4.d" : { "RULE" : "A constructed deck can only include {cards} of the same {faction} as its {Hero}." } ,
+					"1.1.4.e" : { "RULE" : "A constructed deck can include at most 3 {cards} with the same {name}." , 
+						"Remark" : "In {Altered}, contrary to many other collectible card games, cards with the same {name} may have different {characteristics}, {rarity}, and {faction}. A player in a constructed event should make clear which version of a {card} they play. See Figure 1 for an example"
+					} ,
+					"1.1.4.f" : { "RULE" : "A constructed deck can include at most 15 rare (%rare%) {cards}." } ,
+					"1.1.4.g" : { "RULE" : "A constructed deck can include at most 3 unique (%unique%) {cards}." }
 				} } ,
 				"1.1.5" : { "NAME" : "Limited play" , "CONTENT" : {
-					"1.1.5.a" : "In limited play, players must build their deck from a restricted pool of {cards} provided to them for a specific event, plus any number of Mana Convergence." ,
-					"1.1.5.b" : "A limited deck can include at most 1 {Hero}." ,
-					"1.1.5.c" : "A limited deck must include at least 29 other {cards}." ,
-					"1.1.5.d" : "A limited deck can include {cards} from at most 3 {factions}; if that deck include a {Hero}, that Hero’s {faction} counts as one of the three."
+					"1.1.5.a" : { "RULE" : "In limited play, players must build their deck from a restricted pool of {cards} provided to them for a specific event, plus any number of Mana Convergence." } ,
+					"1.1.5.b" : { "RULE" : "A limited deck can include at most 1 {Hero}." } ,
+					"1.1.5.c" : { "RULE" : "A limited deck must include at least 29 other {cards}." } ,
+					"1.1.5.d" : { "RULE" : "A limited deck can include {cards} from at most 3 {factions}; if that deck include a {Hero}, that Hero’s {faction} counts as one of the three." ,
+						"Remark" : "Limited decks have no restrictions in terms of name or rarity."
+					}
 				} } ,
 				"1.1.6" : { "NAME" : "Numbers and symbols" , "CONTENT" : {
-					"1.1.6.a" : "When the game uses a number, it is always an integer." ,
-					"1.1.6.b" : "If an event requires a division, it will precise whether to round up or down." ,
-					"1.1.6.c" : "If an event would need to divide a number by 0, that event cannot happen." ,
-					"1.1.6.d" : "If a calculation uses a missing number (e.g. the {statistics} of a non-{Character} {card}), it uses zero instead." ,
-					"1.1.6.e" : "The symbol %j% means \"When I join the Expedition zone—\"." ,
-					"1.1.6.f" : "The symbol %h% means \"When I am played from Hand—\"." ,
-					"1.1.6.g" : "The symbol %r% means \"When I am played from Reserve—\"." ,
-					"1.1.6.h" : "The symbol %T% means \"{exhaust} me\"" ,
-					"1.1.6.i" : "The symbol %D% means \"Discard me from {Reserve}\"" ,
-					"1.1.6.j" : "A white [number] in a black or yellow circle (%1%, %2%, ...) in a {cost} means \"Pay [that number] mana\"."
+					"1.1.6.a" : { "RULE" : "When the game uses a number, it is always an integer." } ,
+					"1.1.6.b" : { "RULE" : "If an event requires a division, it will precise whether to round up or down." } ,
+					"1.1.6.c" : { "RULE" : "If an event would need to divide a number by 0, that event cannot happen." } ,
+					"1.1.6.d" : { "RULE" : "If a calculation uses a missing number (e.g. the {statistics} of a non-{Character} {card}), it uses zero instead." } ,
+					"1.1.6.e" : { "RULE" : "The symbol %j% means \"When I join the Expedition zone—\"." } ,
+					"1.1.6.f" : { "RULE" : "The symbol %h% means \"When I am played from Hand—\"." } ,
+					"1.1.6.g" : { "RULE" : "The symbol %r% means \"When I am played from Reserve—\"." } ,
+					"1.1.6.h" : { "RULE" : "The symbol %T% means \"{exhaust} me\"" } ,
+					"1.1.6.i" : { "RULE" : "The symbol %D% means \"Discard me from {Reserve}\"" } ,
+					"1.1.6.j" : "A white [number] in a black or yellow circle (%1%, %2%, ...) in a {cost} means \"Pay [that number] mana\"." }
 				} } ,
 				"1.1.7" : { "NAME" : "Material" , "CONTENT" : {
-					"1.1.7.a" : "Each {player} start the game with a deck of {Altered} {cards}. They should be officially printed {Altered} {cards} with a valid QR code pointing to `https://www.altered.gg`. For the purpose of the rules, the text of a {card} is the English text appearing on the {Altered} website. Note that the text appearing on the physical card may differ, if the card is printed in a different language or without text. It may also have received errata since it first printing." ,
-					"1.1.7.b" : "{Tokens} are used to represent {Characters} which are created by game rather than represented by {Cards}. Players must have a way of representing the {tokens} that their deck can create in a way that makes clear their {characteristics} and {status}. It is possible, but not mandatory, to use the oﬀicial {tokens} published by Equinox." ,
-					"1.1.7.c" : "{Counters} are markers put on {cards} by {events} in the game. Players should have a way of representing {counters} which make clear which counters are on which {objects}. Counters with the same name are indistinguishable." ,
-					"1.1.7.d" : "If a {player}'s deck has cards that ask them to \"roll a die\", they should have fair six-sided dice numbered from 1 to 6." ,
-					"1.1.7.e" : "{Players} should have a way to represent the {status} of their {objects} in all {visible} {zones}. The {Exhausted} {status} is usually represented by laying the {object} in a vertical or horizontal direction. Other statuses may be represented by printed or coloured markers." ,
-					"1.1.7.f" : "Between the two of them, players need a {Hero Region} {Card}, a {Companion Region} {Card}, and three different {Tumult cards} (one %V% | %M% %O%, one %M% | %V% %O%, and one %O% | %V% %M%) to represent the {Adventure}."
+					"1.1.7.a" : { "RULE" : "Each {player} start the game with a deck of {Altered} {cards}. They should be officially printed {Altered} {cards} with a valid QR code pointing to `https://www.altered.gg`. For the purpose of the rules, the text of a {card} is the English text appearing on the {Altered} website. Note that the text appearing on the physical card may differ, if the card is printed in a different language or without text. It may also have received errata since it first printing." } ,
+					"1.1.7.b" : { "RULE" : "{Tokens} are used to represent {Characters} which are created by game rather than represented by {Cards}. Players must have a way of representing the {tokens} that their deck can create in a way that makes clear their {characteristics} and {status}. It is possible, but not mandatory, to use the oﬀicial {tokens} published by Equinox." } ,
+					"1.1.7.c" : { "RULE" : "{Counters} are markers put on {cards} by {events} in the game. Players should have a way of representing {counters} which make clear which counters are on which {objects}. Counters with the same name are indistinguishable." } ,
+					"1.1.7.d" : { "RULE" : "If a {player}'s deck has cards that ask them to \"roll a die\", they should have fair six-sided dice numbered from 1 to 6." } ,
+					"1.1.7.e" : { "RULE" : "{Players} should have a way to represent the {status} of their {objects} in all {visible} {zones}. The {Exhausted} {status} is usually represented by laying the {object} in a vertical or horizontal direction. Other statuses may be represented by printed or coloured markers." } ,
+					"1.1.7.f" : { "RULE" : "Between the two of them, players need a {Hero Region} {Card}, a {Companion Region} {Card}, and three different {Tumult cards} (one %V% | %M% %O%, one %M% | %V% %O%, and one %O% | %V% %M%) to represent the {Adventure}." }
 				} }
 			} } ,
 			"1.2" : { "NAME" : "Game concepts" , "CONTENT" : {
 				"1.2.1" : { "NAME" : "{Players}" , "CONTENT" : {
-					"1.2.1.a" : "A {player} is a participant in a game of {Altered}." ,
-					"1.2.1.b" : "In a two-{player} game, each {player} is the other’s {opponent}." ,
-					"1.2.1.c" : "Each player in a game of {Altered} needs to have their own deck." ,
-					"1.2.1.d" : "Each player has a number of private {zones} in the game: {Deck}, {Discard pile}, {Hand}, {Hero zone}, {Landmark zone}, {Mana zone}, and {Reserve}."
+					"1.2.1.a" : { "RULE" : "A {player} is a participant in a game of {Altered}." } ,
+					"1.2.1.b" : { "RULE" : "In a two-{player} game, each {player} is the other’s {opponent}." } ,
+					"1.2.1.c" : { "RULE" : "Each player in a game of {Altered} needs to have their own deck." } ,
+					"1.2.1.d" : { "RULE" : "Each player has a number of private {zones} in the game: {Deck}, {Discard pile}, {Hand}, {Hero zone}, {Landmark zone}, {Mana zone}, and {Reserve}." }
 				} } ,
 				"1.2.2" : { "NAME" : "{Objects}" , "CONTENT" : {
-					"1.2.2.a" : "{Objects} are the game pieces of {Altered}." , 
-					"1.2.2.b" : "Most things in a game of {Altered} are either {objects}, properties of {objects} or sets of {objects}." ,
-					"1.2.2.c" : "{Objects} have {characteristics}:\n- {Type} ({Character}, {Emblem}, {Hero}, {Permanent}, {Region}, {Spell})\n- {Sub-type}\n- {Name}\n- {Rarity} (common %common%, rare %rare%, unique %unique%)\n- {Version}\n- {Hand Cost}\n- {Reserve cost}\n- {Faction} ({Axiom} %axiom%, {Bravos} %bravos%, {Lyra} %lyra%, {Muna} %muna%, {Ordis} %ordis%, {Yzmir} %yzmir%)\n- {Statistics} (one number for each of %V%, %M%, %O%)\n- {Abilities}\n- {Reserve limit} (only for {Heroes})\n- {Landmark limit} (only for {Heroes})\n- {Duration} (only for {Emblems})" ,
-					"1.2.2.d" : "An {object} may lack some of these {characteristics}."
+					"1.2.2.a" : { "RULE" : "{Objects} are the game pieces of {Altered}." , 
+					"1.2.2.b" : { "RULE" : "Most things in a game of {Altered} are either {objects}, properties of {objects} or sets of {objects}." } ,
+					"1.2.2.c" : { "RULE" : "{Objects} have {characteristics}:\n- {Type} ({Character}, {Emblem}, {Hero}, {Permanent}, {Region}, {Spell})\n- {Sub-type}\n- {Name}\n- {Rarity} (common %common%, rare %rare%, unique %unique%)\n- {Version}\n- {Hand Cost}\n- {Reserve cost}\n- {Faction} ({Axiom} %axiom%, {Bravos} %bravos%, {Lyra} %lyra%, {Muna} %muna%, {Ordis} %ordis%, {Yzmir} %yzmir%)\n- {Statistics} (one number for each of %V%, %M%, %O%)\n- {Abilities}\n- {Reserve limit} (only for {Heroes})\n- {Landmark limit} (only for {Heroes})\n- {Duration} (only for {Emblems})" } ,
+					"1.2.2.d" : { "RULE" : "An {object} may lack some of these {characteristics}." }
+				} } ,
+				"1.2.3" : { "NAME" : "{Zones}" , "CONTENT" : {
+					"1.2.3.a" : { "RULE" : "{Zones} are the game board of {Altered}. They are sets of {cards} or {objects}." } ,
+					"1.2.3.b" : { "RULE" : "There are ten kind of {zones} ({Adventure}, {Deck}, {Discard pile}, {Expedition zone}, {Hand}, {Hero zone}, {Landmark zone}, {Limbo}, {Mana zone}, {Reserve})" } ,
+					"1.2.3.c" : { "RULE" : "Three {zones} are {shared}: {Adventure}, {Expedition zone}, {Limbo}. There is only one of each in a game of Altered." } ,
+					"1.2.3.d" : { "RULE" : "The seven other {zones} are {private}. Each player has their own {Deck}, {Discard pile}, {Hand}, {Hero zone}, {Landmark zone}, {Mana zone}, and {Reserve}." } ,
+					"1.2.3.e" : { "RULE" : "Seven {zones} are {visible}: {Adventure}, {Discard pile}, {Expedition zone}, {Hero zone}, {Landmark zone}, {Limbo} and {Reserve}. They contain {objects}; players can know the number and {characteristics} of all {objects} in these {zones} at all times." } ,
+					"1.2.3.f" : { "RULE" : "Three {zones} are {hidden}: {Deck}, {Hand}, and {Mana zone}. They contain {cards}; players can know the number of {cards} in each of these {zones} at all times." }
+				} } ,
+				"1.2.4" : { "NAME" : "{Abilities}" , "CONTENT" : {
+					"1.2.4.a" : { "RULE" : "Each line in the textbox of an {object} is a separate {ability}." } ,
+					"1.2.4.b" : { "RULE" : "Some abilities are represented by {keywords}. Several {keywords}, representing different {abilities}, may appear the same line." } ,
+					"1.2.4.c" : { "RULE" : "There are four types of {abilities}:\n- {Quick actions} are written \"{Cost}: {Effect}\". Players may play any number of {quick actions} in their turn before playing a {card} or passing.\n- {Reactions} are written \n{Trigger} - {Effect}\n or \n{Effect} after {trigger}\n. When an {event} matches the {trigger}, the {Effect} resolves.\n- {Passive abilities} are written as statements. {Passive abilities} may modify {rules}, {events}, or the {characteristics} of {objects}.\n- {Effects} are written as changes to the game state. When an {effect} resolves, these changes are applied." } ,
+					"1.2.4.d" : { "RULE" : "Abilities only work when the {object} is {in play} (i.e. in the {Expedition zone}, the {Hero zone}, or the {Landmark zone}) unless it specifies that it works in another zone. Furthermore:\n- {Support abilities} only work in {Reserve};\n- {Abilities} of {Emblems} only work in {Limbo};\n- {Abilities} of an {object} that say that it can be played from a specific {zone} work in that {zone}.\n- {Abilities} of an {object} that change the way it may be played, including its {cost}, work in any {zone} from which that {object} can be played." }
+				} } ,
+				"1.2.5" : { "NAME" : "{Costs}" , "CONTENT" : {
+					"1.2.5.a" : { "RULE" : "A {cost} is a change in the game state that a player can do in order to do something, e.g. playing a {card} or a {quick action}." } ,
+					"1.2.5.b" : { "RULE" : "A {player} is never forced to pay a {cost}. Not paying a {cost} may preclude certain game actions, such as playing a {card}, or have some things happen or not happen." } ,
+					"1.2.5.c" : { "RULE" : "{Costs} must always be paid in full. If a player cannot pay part of a {cost}, they cannot pay the {cost} at all." } ,
+					"1.2.5.d" : { "RULE" : "All parts in a single {cost} are always paid simultaneously." } ,
+					"1.2.5.e" : { "RULE" : "A mana {cost} is payed by exhausting that many {Mana Orbs}." }
+				} } ,
+				"1.2.6" : { "NAME" : "{Effects}" , "CONTENT" : {
+					"1.2.6.a" : { "RULE" : "An {effect} is a change in the game state that happens during the resolution of a {spell}, a {quick action}, a {reaction}, or a {daily effect}." } ,
+					"1.2.6.b" : { "RULE" : "{Effects} may have several {steps}. There is usually one {step} for each verb in an effect, unless these verbs are said to happen simultaneously." } ,
+					"1.2.6.c" : { "RULE" : "{Effects} are usually mandatory. Optional {steps} use the word \nmay\n." } ,
+					"1.2.6.d" : { "RULE" : "Some {steps} are conditional. They are written \nIf [condition], do [{step}]\n. Conditional {steps} whose condition is not met are ignored." } ,
+					"1.2.6.e" : { "RULE" : "Some {steps} contain {internal actions} which can be played if the controller of the effect wishes to pay their {cost}. They are written \nYou may [pay {cost}] to [do {effect}]”. {Internal actions} whose {cost} is not paid are ignored." } ,
+					"1.2.6.f" : { "RULE" : "If part of an {effect} cannot happen, that part is ignored, but the rest of the {effect} happens normally." }
+				} } ,
+				"1.2.7" : { "NAME" : "{Events}" , "CONTENT" : {
+					"1.2.7.a" : { "RULE" : "An {event} is a change from one game state to the next." } ,
+					"1.2.7.b" : { "RULE" : "Paying a {cost} is always a single {event}." } ,
+					"1.2.7.c" : { "RULE" : "There is a different {event} for each {step} in the resolution of an {effect}." } ,
+					"1.2.7.d" : { "RULE" : "Some {events} involve no change in the game state, for example if they act on an empty set of {objects} or if they only provide information to one player." }
 				} }
-
+			} } ,
+			"1.3" : { "NAME" : "Game Progress" , "CONTENT" : {
+				"1.3.1" : { "NAME" : "Starting the game" , "CONTENT" : {
+					"1.3.1.a" : { "RULE" : "The players build a common {Adventure} with the {Hero Region} {card} on one end, the {Companion Region} {card} on the other, and three face-down {Tumult} {cards} in random positions and orientations between the {Hero Region} and the {Companion Region}." } ,
+					"1.3.1.b" : { "RULE" : "Each {player}'s {hero expedition counter} is put on the {Hero Region}, and each {player}'s {companion expedition counter} is put on the {Companion Region}." } ,
+					"1.3.1.c" : { "RULE" : "Each player puts their {Hero} (if they have one) in their {Hero zone}, shuffles the rest of their {cards} and puts it in their {Deck}." } ,
+					"1.3.1.d" : { "RULE" : "In the {Morning} of the first {day}, instead of the normal {daily effects}, {players} draw six {cards} and put three of them in their {Mana zone}." }
+				} } ,
+				"1.3.2" : { "NAME" : "Day progress" , "CONTENT" : {
+					"1.3.2.a" : { "RULE" : "Each {day} is divided in five {phases}." } ,
+					"1.3.2.b" : { "RULE" : "In the {Morning} {phase}, the opponent of the {first player} becomes the {first player} ({Succeed}), players ready their {Characters}, {Permanents}, and {Mana Orbs} ({Prepare}), draw two {cards} ({Draw}) and may put one card from their {Hand} in their {Mana zone}." } ,
+					"1.3.2.c" : { "RULE" : "In the {Noon} {phase}, nothing happens unless one or more {reactions} trigger \"At {Noon}\"." } ,
+					"1.3.2.d" : { "RULE" : "In the {Afternoon} {phase}, starting with the {first player}, {players} alternate taking {turns} until both have passed; during their {turn}, a player may play any number of {quick actions} and then either play a {card} or pass; once a player has passed, they cannot take more {turns} this {day}." } ,
+					"1.3.2.e" : { "RULE" : "In the {Dusk} {phase}, {players} sum up the {statistics} of all the {characters} in each of their {expeditions}. An {expedition} moves forward if one of its {statistics} is:\n- one of its {Region}'s {types};\n- (strictly) greater than the opposing {expedition}'s corresponding {statistic};\n- (strictly) greater than zero." }
+				} } ,
+				"1.3.3" : { "NAME" : "Ending the game" , "CONTENT" : {
+					"1.3.3.a" : { "RULE" : "The game continues until one player’s {hero expedition} and {companion expedition} meet or cross each other." } ,
+					"1.3.3.b" : { "RULE" : "At that point, count the distance between each {expedition} and its starting {Region}. If the total distance of one {player}'s {expeditions} is greater than its {opponent}'s, that player wins the game." } ,
+					"1.3.3.c" : { "RULE" : "Otherwise, {tiebreakers} start: all {regions} in the {Adventure} are immediately replaced by the {Arena} (on the back of the {Companion card})." } ,
+					"1.3.3.d" : { "RULE" : "During {tiebreakers}, all {Expeditions} are in the {Arena}, and the {statistics} of all {Characters} are summed up during {Dusk}." } ,
+					"1.3.3.e" : { "RULE" : "If one player wins on more {Region} {types} than their opponent, that player wins the game." } ,
+					"1.3.3.f" : { "RULE" : "{Tiebreakers} may last for several {days}." }
+				} }
+			} } ,
+			"1.4" : { "NAME" : "Golden rules" , "CONTENT" : {
+				"1.4.1" : { "NAME" : "Can't beats can" , "CONTENT" : {
+					"1.4.1.a" : { "RULE" : "If a rule or a {passive ability} says that it is impossible to do something, and a {cost} or an {effect} tries to do that thing, then the thing cannot be done." } ,
+					"1.4.1.b" : { "RULE" : "An impossible {cost} cannot be paid." } ,
+					"1.4.1.c" : { "RULE" : "An impossible {effect} cannot be performed. If other parts of the {effect} can happen, the rest of the {effect} resolves normally." } ,
+					"1.4.1.d" : { "RULE" : "If it impossible to modify an impossible {event}, even if the modified {event} would itself be possible." }
+				} } ,
+				"1.4.2" : { "NAME" : "Specific beats general" , "CONTENT" : {
+					"1.4.2.a" : { "RULE" : "If a {card} allows a player to do something that they cannot normally do, or to do it in a different way, the {card} takes priority." }
+				} } ,
+				"1.4.3" : { "NAME" : "My {cards}, my {zones}" , "CONTENT" : {
+					"1.4.3.a" : { "RULE" : "If a {card} owned by a player would move to a {zone} belonging to another player, it goes to its owner’s corresponding zone instead." }
+				} } ,
+				"1.4.4" : { "NAME" : "New {zone}, new {object}" , "CONTENT" : {
+					"1.4.4.a" : { "RULE" : "{Objects} do not change {Zones}, the items that represent them does. Most effects that relate to an {object} in a {zone} will not be able to follow it to another {zone}, a common exception being the {event} which moves an {object}." }
+				} } ,
+				"1.4.5" : { "NAME" : "Initiative order" , "CONTENT" : {
+					"1.4.5.a" : { "RULE" : "If both players need to take decisions simultaneously, the {player} with {initiative} (the {player} who is currently taking their turn, or the {first player} during non-{Afternoon} {phases}) must decide first. If that choice involves an {object} from a {visible} {zone}, their opponent knows which {object} they have chosen. If the choice involves a {card} from a {hidden} zone, they must make their choice explicit, but they do not need to reveal the chosen {card}." ,
+						"Example" : "Ninette plays a game against Lithium. During her {turn}, Ninette plays %rare% Kitsune %muna% from her {Hand}. Kitsune has the {reaction} \"%h% Each player may {Resupply”}. She must let Lithium know whether or not she chooses to {Resupply} before he takes his decision. However, if she chooses to {Resupply}, Lithium will not see Ninette's top {card} until after he decides whether to {Resupply} or not.\nIn his {turn}, Lithium plays %common% Anubis %ordis% , which has the {reaction} \"%j% Each player sacrifices a Character\". Lithium must choose which {Character} to sacrifice before Ninette, and Ninette knows which {Character} he chose to sacrifice when she makes her choice. Both {Characters} are sacrificed simultaneously."
+					}
+				} } ,
+				"1.4.6" : { "NAME" : "Nothing is forever" , "CONTENT" : {
+					"1.4.6.a" : { "RULE" : "The interaction of some {cards} may lead to seemingly endless loops. In order to resolve these situations, there are limits to the number of times things can happen in a single {day}." } ,
+					"1.4.6.b" : { "RULE" : "A given {quick action} may only be played a hundred times per {day}." } ,
+					"1.4.6.c" : { "RULE" : "A given {reaction} may only activate a hundred times per {day}." }
+				} }
+			} }			
+		} } ,
+		"2" : { "NAME" : "Objects" , "CONTENT" : {
+			"2.1" : { "NAME" : "General" , "CONTENT" : {
+				"2.1.a" : { "RULE" : "{Objects} exist in every {visible} {zone}. Each {object} belongs to a single zone at any given time." } ,
+				"2.1.b" : { "RULE" : "{Objects} can be represented in different ways: {Altered cards}, {tokens}, {Adventure cards}, halves of {Tumult cards}, and {emblems}." } ,
+				"2.1.c" : { "RULE" : "{Objects} never change {zones}. When a {cost} or an {effect} \"moves\" an {object}, it moves the item representing that {object}, which becomes a new {object} with a new {timestamp} if it ends up in a {visible} {zone}. Effects relating to the old {object} do not apply to the new one (see Rule 2.1.e)." ,
+					"Example" : "Lithium has %common% Haven, Bravos Bastion %bravos% and plays %rare% Kuwat, the Dissenter %yzmir% from {Reserve}. This triggers the two {reactions} of Kuwat, its native \"%j% Sacrifice a {Character}\" and the one granted by Haven \"%r% I gain 1 {boost}\". If Lithium decide to play the %j% {reaction} first and to sacrifice Kuwat, then the %r% {reaction} will not boost Kuwat in the {Discard pile} as it is not the same {object} as Kuwat in the {Expedition zone} which triggered the %r% reaction."
+				} ,
+				"2.1.d" : { "RULE" : "If a {token} would leave the {Expedition zone}, it ceases to exist immediately after joining its new {zone}. This is an additive {event}-modifying {rule}." } ,
+				"2.1.e" : { "RULE" : "If an {ability} refers to a {card} or an {object} moving from any {zone} to a {visible} {zone} (as part of a {cost}, a trigger, or an {effect}), that ability can find the new {object} in its destination {zone}. This is an exception to Rule 2.1.c." ,
+					"Example" : "%common% Moonlight Jellyfish %yzmir% has the {reaction} \"When I'm sacrificed, if I'm not Fleeting — Put me in Reserve\".\n- If Moonlight Jellyfish is sacrificed, its reaction triggers and is able to find it in the {Discard pile} even though it is a different {object} than the one whose {reaction} just triggered"
+				} ,
+				"2.1.f" : { "RULE" : "Rule 2.1.e can apply through more than one {zone} change, as long as they all come from the ability itself." ,
+					"Example" : "%common% Coppélia %axiom% has the {reaction} \nWhen I go to {Reserve} from your {Hand}— You may play me for free and I gain {Asleep}\". Coppélia in {Reserve}, Coppélia in {Limbo}, and Coppélia in the {Expedition zone} are three different {objects}, but the effect of Coppélia's reaction in {Reserve} can act on the two other Coppélias as it is that effect that moved the {card} from {Reserve} to {Limbo} and to the {Expedition zone}."
+				} ,
+				"2.1.g" : { "RULE" : "{Cards} in hidden zones are not {objects}." } ,
+				"2.1.h" : { "RULE" : "{Zones} are not {objects}: they are sets of objects or cards." } ,
+				"2.1.i" : { "RULE" : "{Counters} are not {objects}: they are markers placed on objects." }
+			} } ,
+			"2.2" : { "NAME" : "Characteristics" , "CONTENT" : {
+				"2.2.1" : { "NAME" : "Type" , "CONTENT" : {
+					"2.2.1.a" : { "RULE" : "A type is one of the following: {Character}, {Emblem}, {Hero}, {Permanent}, {Region}, {Spell}." } ,
+					"2.2.1.b" : { "RULE" : "Each object has a single {type}." } ,
+					"2.2.1.c" : { "RULE" : "The {type} of a card is written on the {type} line, just below the name of the card. It is the first word of the type line, before the dash." } ,
+					"2.2.1.d" : { "RULE" : "The {type} of a {token} is {Character}." ,
+						"Remark" : "The {tokens} printed by Equinox have the word \"{Token}\" in their type line. This is for clarity and has no rules implications."
+					} ,
+					"2.2.1.e" : { "RULE" : "The {type} of an {object} represented by an {Adventure card} or half a {Tumult card} is {Region}." } ,
+					"2.2.1.f" : { "RULE" : "The {type} of an {object} represented by a face-down {card} in the {Mana zone} is {Mana Orb}." } ,
+					"2.2.1.g" : { "RULE" : "The {type} of an {emblem} is {Emblem}." ,
+						"Remark" : "The {type} {Emblem} does not appear on {cards}. It is reserved for temporary {objects} in {Limbo} created by {reactions} or {effects} whose impact on the game lasts longer than their own resolution."
+					} ,
+					"2.2.1.h" : { "RULE" : "When a {cost} or an effect refers to \"a [{type} ]\", it refers to an object {in play} with the appropriate {type}, unless it specifies a specific zone." ,
+						"Example" : "%rare% Banishing Gate %yzmir% has the {effect} \"Discard target {Character} or {Permanent}\". When that {Spell} is played, its controller must choose a {Character} or {Permanent} {in play}. They cannot choose a {Character} or {Permanent} from another {zone}, such as the {Reserve}."
+					} ,
+					"2.2.1.i" : { "RULE" : "When a {cost} or an {effect} checks whether a specific {card} or object is \"a [{type}]\n, it checks whether that {card} or that {object} has the appropriate {type}, regardless of its location." ,
+						"Example" : " %common% Ada Lovelace %axiom% has the {reaction} \"%r% You may put a card from your hand in {Reserve}. If it's a {Permanent}, draw a {card}\". If a player choses to put a {Permanent} {card} in Reserve during the resolution of this {reaction}, they draw a {card}."
+					}
+				} } ,
+				"2.2.2" : { "NAME" : "Subtypes" , "CONTENT" : {
+					"2.2.2.a" : { "RULE" : "Characters, Spells, Permanents, Regions, and Emblems may have sub-types." } ,
+					"2.2.2.b" : { "RULE" : "Heroes have no sub-types." } ,
+					"2.2.2.c" : { "RULE" : "An object may have any number of sub-types." } ,
+					"2.2.2.d" : { "RULE" : "The list of character sub-types is: Adventurer, Animal, Apprentice, Artist, Bureaucrat, Citizen, Companion, Deity, Dragon, Druid, Elemental, Engineer, Fairy, Leviathan, Mage, Messenger, Noble, Plant, Robot, Soldier, Scholar, Spirit, Titan, Trainer." } ,
+					"2.2.2.e" : { "RULE" : "The list of permanent sub-types is: Landmark." } ,
+					"2.2.2.f" : { "RULE" : "The list of region sub-types is: Forest (%V%), Mountain (%M%), Water (%O%)." } ,
+					"2.2.2.g" : { "RULE" : "The list of spell sub-types is: Boon, Conjuration, Disruption, Maneuver, Song." } ,
+					"2.2.2.h" : { "RULE" : "The list of emblem sub-types is: Reaction, Ongoing." } ,
+					"2.2.2.i" : { "RULE" : "The sub-types of a card are written on the type line, just below the name of the card. They are to the right of the dash; if there is more than one sub-type, they are separated by commas." } ,
+					"2.2.2.j" : { "RULE" : "The sub-types of a token are defined by the effect that creates it. They are written after the statistics of the token, separated by commas." ,
+						"Example" : "Foundry Armorer  has the reaction \"%r% Create a *Brassbug* 2/2/2 Robot token in target Expedition\n. The sub-type of the token created when this reaction resolves is \"Robot\"."
+					} ,
+					"2.2.2.k" : { "RULE" : "The sub-types of the hero region, companion region, and the arena are Forest (%V%), Mountain (%M%), and Water (%O%)." ,
+						"Remark" : "Regions represented by face-down Tumult cards have no sub-types."
+					} ,
+					"2.2.2.l" : { "RULE" : "The sub-types of regions represented face-up Tumult cards are described by symbols on the side of the regions." } ,
+					"2.2.2.m" : { "RULE" : "The sub-type of an emblem created as a reaction triggers is Reaction. The sub-type of an emblem created by an effect that lasts longer than its own resolution is Ongoing." ,
+						"Example" : "Aloe Vera has the reaction \"At Noon- Resupply\". As the Noon phase begins, Aloe Vera's controller creates an Emblem-Reaction in Limbo with the text \"Resupply\". When that Reaction is played, its effect resolves, then it ceases to exist." ,
+						"Example 2" : "Celebration Day has the effect “Expeditions can ́t move forward this Day”. When that effect resolves, an Emblem-Ongoing is created in Limbo with the passive ability “Expeditions can’t move forward” and the duration “this Day”."
+					} ,
+					"2.2.2.n" : { "RULE" : "When a cost or an effect refers to “a sub-type”, it refers to an object in play with the appropriate sub-type." ,
+						"Example" : "Three Little Pigs has the reaction “%j% If you control two or more Landmarks, I gain 1 boost”. When that Reaction resolves, it only counts the Landmarks in the Landmark zone, not those in Reserve or in the Discard pile."
+					} ,
+					"2.2.2.o" : { "RULE" : "When a cost or an effect checks whether a specific card or object is “a [sub-type ]”, it checks whether that card or that object has the appropriate sub-type, regardless of its location." } ,
+					"2.2.2.p" : { "RULE" : "Some effects have objects gain or lose types. These effects actually mean gaining or losing sub-types." ,
+						"Example" : "The Kraken has the ability “All regions are %O% and lose their other types”. When the Kraken is in play, regions keep the type Region and lose the %V% and %M% sub-types."
+					}
+				} } ,
+				"2.2.3" : { "NAME" : "Name" , "CONTENT" : {
+					"2.2.3.a" : { "RULE" : "The name of an object is a series of words and symbols." } ,
+					"2.2.3.b" : { "RULE" : "An object has only one name, even if it contains several words." } , 
+					"2.2.3.c" : { "RULE" : "The name of an object is its English name, even if it is represented by a card printed in a different language." ,
+						"Example" : "Fée Clochette is the French version of Tinker Bell . The name of an object represented by that card is Tinker Bell."
+					} ,
+					"2.2.3.d" : { "RULE" : "The name of an object represented by a Permanent card is written in the middle of the card, below the rarity gem and above the type line." } ,
+					"2.2.3.e" : { "RULE" : "The name of an object represented by a non-Permanent card is written on the top of the card, below the rarity gem." ,
+						"Remark" : "Cards with the same name may have different characteristics, if they have different rarities, different factions, or they are unique."
+					} ,
+					"2.2.3.f" : { "RULE" : "The name of a token is defined by the effect that creates it. It is composed of the words written before its statistics." ,
+						"Example" : "Ordis Cadets has the reaction “%j% Create an Ordis Recruit 1/1/1 Soldier token in my Expedition”. The name of the token created when this Reaction resolves is “Ordis Recruit”."
+					} ,
+					"2.2.3.g" : { "RULE" : "Emblems have no name." }
+				} } ,
+				"2.2.4" : { "NAME" : "Rarity" , "CONTENT" : {
+					"2.2.4.a" : { "RULE" : "The rarity of an object is one of the following: common, rare, or unique." } ,
+					"2.2.4.b" : { "RULE" : "The rarity of a card is indicated by a gem just above the card’s name. A gray gem %common% indicates a common card; a blue gem %rare% indicates a rare card; an orange gem %unique% indicates a unique card. It is also written as a letter (C, R, or U) on the legal line at the bottom of the card." } ,
+					"2.2.4.c" : { "RULE" : "Heroes, regions, tokens, and emblems have no rarity." }
+				} } ,
+				"2.2.5" : { "NAME" : "Version" , "CONTENT" : {
+					"2.2.5.a" : { "RULE" : "The version of an object is a code of the form: LLL-NNN-L(-NNNN), where the L’s are letters and the N’s are numbers." } ,
+					"2.2.5.b" : { "RULE" : "The first three letter correspond to the set release. The list of sets and their code is: Beyond the Gates (BTG)." } ,
+					"2.2.5.c" : { "RULE" : "The next three numbers are the number of the card in the set." } ,
+					"2.2.5.d" : { "RULE" : "The single letter is the rarity of the card, which can be C for commom (%common%), R for rare (%rare%), F for faction-shifted (%rare%), or U for unique (%unique%)." } ,
+					"2.2.5.e" : { "RULE" : "Unique cards have four extra numbers." } ,
+					"2.2.5.f" : { "RULE" : "Each unique card has a different version number." } ,
+					"2.2.5.g" : { "RULE" : "In the Beyond the Gates set, different cards may share the same number if one comes from the Kickstarter release and the other one from the Retail release. They may be distinguished by a stylized A on the bottom left of the card." }
+				} } ,
+				"2.2.6" : { "NAME" : "Hand Cost" , "CONTENT" : {
+					"2.2.6.a" : { "RULE" : "The Hand Cost of an object is a number." } ,
+					"2.2.6.b" : { "RULE" : "The Hand Cost of a card is written as a number in a circle on the top left of the card, just above and to the left of the Reserve cost." } ,
+					"2.2.6.c" : { "RULE" : "Tokens have a hand cost of 0." } ,
+					"2.2.6.d" : { "RULE" : "Emblems have no hand cost." }
+				} } ,
+				"2.2.7" : { "NAME" : "Reserve Cost" , "CONTENT" : {
+					"2.2.7.a" : { "RULE" : "The Reserve cost of an object is a number." } ,
+					"2.2.7.b" : { "RULE" : "The Reserve cost of a card is written as a number in a circle on the top left of the card, just below and to the right of the Hand cost." } ,
+					"2.2.7.c" : { "RULE" : "Tokens have a reserve cost of 0." } ,
+					"2.2.7.d" : { "RULE" : "Emblems have no reserve cost." }
+				} } ,	
+				"2.2.8" : { "NAME" : "Faction" , "CONTENT" : {
+					"2.2.8.a" : { "RULE" : "A faction is one of the following: Axiom, Bravos, Lyra, Muna, Ordis, Yzmir." } ,
+					"2.2.8.b" : { "RULE" : "Some objects have no faction. They are called neutral." } ,
+					"2.2.8.c" : { "RULE" : "The faction of an object represented by a card is defined by its faction symbol and its background color.\n- Axiom: %axiom%, brown\n- Bravos: %bravos%, red\n- Lyra: %lyra%, pink\n- Muna: %muna%, green\n- Ordis: %ordis%, blue\n- Yzmir: %yzmir%, purple" } ,
+					"2.2.8.d" : { "RULE" : "Tokens, reactions, and emblems have no faction." ,
+						"Remark" : "The tokens printed by Equinox have a background color and a faction symbol. This is purely for aesthetic reasons and has no rules implications."
+					}
+				} } ,
+				"2.2.9" : { "NAME" : "Statistics" , "CONTENT" : {
+					"2.2.9.a" : { "RULE" : "Statistics are numbers." } ,
+					"2.2.9.b" : { "RULE" : "There are three statistics: Forest (%V%), Mountain (%M%), and Water (%O%)." } ,
+					"2.2.9.c" : { "RULE" : "Only Characters have statistics." } ,
+					"2.2.9.d" : { "RULE" : "The statistics of a Character card are represented on the left of the card, with %V% on top and in green, %M% in the middle and in orange, and %O% on the bottom and in blue." } ,
+					"2.2.9.e" : { "RULE" : "The statistics of a token are defined by the effect that creates it. They are written between the name and the sub-types of the token, separated by forward slashes, with the %V% statistic first, the %M% statistic second, and the %O% statistic third." ,
+						"Example" : "Kojo & Booda has the reaction “At Noon, if you are the first player l Create a Booda 2/2/2 Companion token in your companion Expedition”. The statistics of this token are 2, 2, and 2."
+					}
+				} } ,
+				"2.2.10" : { "NAME" : "Abilities" , "CONTENT": {
+					"2.2.10.a" : { "RULE" : "Abilities are either quick actions, reactions, passive abilities, or effects." } ,
+					"2.2.10.b" : { "RULE" : "The abilities of an object represented by a card are written in the ability box, below the illustration." } ,
+					"2.2.10.c" : { "RULE" : "Text in italics in the ability box has no existence rules-wise." } ,
+					"2.2.10.d" : { "RULE" : "Some abilities are written in a box inside the ability box with a coloured background and white or yellow text. Such abilities are support abilities." ,
+						"Example" : "The textbox of Haven Trainee has the following text:\n%r% I gain two boosts.\n“All right, lad, show me what you’ve learned.”\n%D%: The next Character you play this turn gains 1 boost. *(Discard me from Reserve to do this.)*\nHaven Trainee (rare) has a two abilities: “%r% I gain two boosts.” and “%D%:The next Character you play this turn gains 1 boost.”. The first one is an in play ability and the second one is a support ability. “All right, lad, show me what you’ve learned.” is flavour text and “(Discard me from Reserve to do this.)” is reminder text."
+					} ,
+					"2.2.10.e" : { "RULE" : "The abilities of a Character represented by a token are defined by the effect that creates it. They are written between quotation marks and preceded by “with”, after the location in which the token is created." ,
+						"Example" : "Lindiwe & Maw has the quick action “%T%: Create a Maw 0/0/0 Companion token in your companion Expedition with “When you sacrifice a Character l I gain two boosts”. This action costs %1% more if you are not the first player”. The token created by this quick action has the reaction “When you sacrifice a Character - I gain two boosts”."
+					} ,
+					"2.2.10.f" : { "RULE" : "Unless otherwise specified, the abilities of an object only work while this object is in play." } ,
+					"2.2.10.g" : { "RULE" : "Support abilities only work while the object is in the Reserve." } ,
+					"2.2.10.h" : { "RULE" : "Quick actions are written “Cost: Effect”.",
+						"Remark" : "Some quick actions use symbols as part of their costs: %T% means “Exhaust me” and D%% means “Discard me from Reserve”. See 7.1.4 “Cost symbols”."
+					} ,
+					"2.2.10.i" : { "RULE" : "Reactions are written “Trigger-- Effect”." ,
+						"Remark" : "Some reactions use symbols as triggers: %j% means “When I enter play from anywhere --”; %h% means “When I am played from Hand--”;%r% means “When I am played from Reserve%l%”. See 7.1.1 “Trigger symbols”"
+					} ,
+					"2.2.10.j" : { "RULE" : "Passive abilities are written as statements. They may create or alter rules, change the characteristics of objects, or modify the way costs and effects affect the game." } ,
+					"2.2.10.k" : { "RULE" : "Effects are written as instructions to change to the game state." }
+				} } ,
+				"2.2.11" : { "NAME" : "Reserve limit" , "CONTENT" : {
+					"2.2.11.a" : { "RULE" : "The reserve limit is a number." } ,
+					"2.2.11.b" : { "RULE" : "Only Heroes have a reserve limit." } ,
+					"2.2.11.c" : { "RULE" : "The reserve limit of a Hero is represented by a number of rectangles on a line below the illustration and above the ability box, to the left of that Hero’s faction symbol." ,
+						"Remark" : "If a player does not have a Hero, the default reserve limit is 2 (see Rule 4.2.5.d )"
+					}
+				} } ,
+				"2.2.12" : { "NAME": "Landmark limit" , "CONTENT" : {
+					"2.2.12.a" : { "RULE" : "The landmark limit is a number." } ,
+					"2.2.12.b" : { "RULE" : "Only Heroes have a landmark limit." } ,
+					"2.2.12.c" : { "RULE" : "The landmark limit of a Hero is represented by a number of rectangles on a line below the illustration and above the ability box, to the right of that Hero’s faction symbol." ,
+						"Remark": "If a player does not have a Hero, the default landmark limit is 2 (see Rule 4.2.5.d )"
+					}
+				} } ,
+				"2.2.13" : { "NAME": "Duration" , "CONTENT" : {
+					"2.2.13.a" : { "RULE" : "A duration is either “this Turn”, “this Afternoon”, or “this Day”." } ,
+					"2.2.13.b" : { "RULE" : "Only Ongoing Emblems have a duration." } ,
+					"2.2.13.c" : { "RULE" : "The duration of an Ongoing Emblem is defined by the event that created it." ,
+						"Example" : "Twinkle Twinkle has the support ability “%D%: The next card you play this turn costs %1% less”. When its effect resolves, its controller creates an Ongoing Emblem in Limbo with the passive ability “The next card you play costs %1% less” and the duration “this turn”. When the current turn ends, this Ongoing Emblem ceases to exist, whether its controller has played a card or not."
+					}
+				} } ,
+				"2.2.14" : { "NAME": "Timestamp" , "CONTENT" : {
+					"2.2.14.a" : { "RULE" : "A timestamp is a number." } ,
+					"2.2.14.b" : { "RULE" : "Whenever an object enters a new zone or is created in a zone, it receives a new timestamp." } ,
+					"2.2.14.c" : { "RULE" : "Each timestamp is greater than all previous timestamps." } ,
+					"2.2.14.d" : { "RULE" : "If multiple objects would receive timestamps at the same time, the first player in initiative order first chooses the relative order of the timestamps for their objects, then their opponent does the same." }
+				} }
 			} }
-		} }
+
+		} }	
 	} ,
 	"GLOSSARY" : {
 		"Ability" : {

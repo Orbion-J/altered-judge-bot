@@ -136,7 +136,8 @@ fn section_contents(section : &serde_json::Value) -> String {
         match v.get("NAME") {
             Some(n) => text = text + " - " + n.as_str().unwrap() ,
             None => {
-                let mut rule = v.as_str().unwrap().to_string() ;
+                let mut rule = v.get("RULE").unwrap()
+                    .as_str().unwrap().to_string() ;
                 rule.truncate(40);
                 text = text + " *" + rule.as_str() + "...*"
             }
@@ -156,16 +157,25 @@ async fn cr(ctx: Context<'_>,
     let mut embed_msg = CreateEmbed::new().color(Colour::BLUE) ;
     match item {
         None => embed_msg = embed_msg
-                    .color(Colour::RED) 
+                    .color(Colour::RED)
                     .title("Invalid rule number")
                     .description("Error - Rule \"".to_string() + number.as_str() + "\" not found") ,
         Some(v) => match v.get("NAME") {
             // is an actual ruling
-            None =>
+            None => {
+                let map_rule = v.as_object().unwrap() ;
+                for (k, vv) in map_rule.iter() {
+                    let vv_text = iconify(vv.as_str().unwrap().to_string()) ;
+                    if k == "RULE" {
+                        embed_msg = embed_msg.description(vv_text)
+                    } else {
+                        embed_msg = embed_msg.field(k, vv_text, false) 
+                    }
+                }
                 embed_msg = embed_msg
                     .title("Rule ".to_string() + number.as_str())
                     .field("In section", sections(&number, cr), false)
-                    .description(iconify(v.as_str().unwrap().to_string())) ,
+            } ,
             // is a section : display its name
             Some(n) => {
                 embed_msg = embed_msg
