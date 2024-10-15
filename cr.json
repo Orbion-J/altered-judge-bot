@@ -330,8 +330,92 @@
 					"2.2.14.c" : { "RULE" : "Each timestamp is greater than all previous timestamps." } ,
 					"2.2.14.d" : { "RULE" : "If multiple objects would receive timestamps at the same time, the first player in initiative order first chooses the relative order of the timestamps for their objects, then their opponent does the same." }
 				} }
+			} } ,
+			"2.3" : { "NAME" : "Applying passive abilities" , "CONTENT" : {
+				"2.3.1" : { "NAME" : "Base Characteristics" , "CONTENT" : {
+					"2.3.1.a" : { "RULE" : "A card object represented by a card has the base characteristics written on the card. Some cards may have received errata since their publication." } ,
+					"2.3.1.b" : { "RULE" : "An object represented by a token has the base characteristics described by the event that created the token." } ,
+					"2.3.1.c" : { "RULE" : "An object may be missing one or more characteristics." } ,
+					"2.3.1.d" : { "RULE" : "If an object does not have a characteristic, this characteristic cannot be modified." } ,
+					"2.3.1.e" : { "RULE" : "If an object does not have a characteristic, this characteristic can be gained." } ,
+					"2.3.1.f" : { "RULE" : "If an event looks for the value of an absent characteristic, it uses zero for numeric characteristics and the empty set for other characteristics." } ,
+					"2.3.1.g" : { "RULE" : "Cards in hidden zones do not have statuses." } ,
+					"2.3.1.h" : { "RULE" : "These abilities only affect objects in play." } ,
+					"2.3.1.i" : { "RULE" : "Passive abilities apply continuously." } ,
+					"2.3.1.j" : { "RULE" : "An object’s characteristics are its base characteristics, modified by all applicable passive abilities." } ,
+					"2.3.1.k" : { "RULE" : "What a passive ability does and what it applies to is re-evaluated after each event." } ,
+					"2.3.1.l" : { "RULE" : "Passive abilities are applied one at a time" } ,
+					"2.3.1.m" : { "RULE" : "In order to determine the order in which passive abilities are applied, Altered uses timestamps and dependency." }
+				} } ,
+				"2.3.2" : { "NAME" : "Dependency" , "CONTENT" : {
+					"2.3.2.a" : { "RULE" : "Dependency is a relation between two passive abilities." } ,
+					"2.3.2.b" : { "RULE" : "Dependency is defined through the notion of direct dependency." } ,
+					"2.3.2.c" : { "RULE" : "A passive ability [A] directly depends on another passive ability [B] if either:" } ,
+					"2.3.2.d" : { "RULE" : "Applying [B] would remove the existence of [A]." ,
+						"Example" : "Character [B] has ”all other characters loses their abilities”. Character [A] has ”All regions are Forests”. Applying B removes [A]’s ability. Therefore, [A] directly depends on [B]."
+					} ,
+					"2.3.2.e" : { "RULE" : "Applying [B] changes what [A] applies to." ,
+						"Example" : "Character A has ”All Elementals have Gigantic ”. Character B has ”All Characters are Elementals”. Character C is not a Elemental. Applying [B] makes [A] apply to [C]. Therefore [A] directly depends on [B]"
+					} ,
+					"2.3.2.f" : { "RULE" : "Applying [B] changes what [A] does." ,
+						"Example" : "Character [A] has ”If I am in Forest, I am Gigantic” Character [B] has ”All regions are Forests ”. Therefore, [A] directly depends on [B]"
+					} ,
+					"2.3.2.g" : { "RULE" : "Dependency is the transitive closure of direct dependency:\n- if [A] depends directly on [B], then [A] depends on [B];\n- if [A] depends on [B] and [B] depends on [C], then [A] depends on [C]." }
+				} } ,
+				"2.3.3" : { "NAME" : "Order of application" , "CONTENT" : {
+					"2.3.3.a" : { "RULE" : "An ability [A] is free from dependency if either:\n- there is no unapplied ability [B] such that [A] depends on [B]; or\n- for each unapplied ability [B], if [A] depends on [B], then [B] depends on [A]." } ,
+					"2.3.3.b" : { "RULE" : "The next ability that is applied is the one with the smallest timestamp that is free from dependency" }
+				} }
+			} } ,
+			"2.4" : { "NAME" : "Statuses" , "CONTENT" : {
+				"2.4.1" : { "NAME" : "General" , "CONTENT" : {
+					"2.4.1.a" : { "RULE" : "Objects may have one or several statuses." } ,
+					"2.4.1.b" : { "RULE" : "An object entering a new zone has no status until specified otherwise." } ,
+					"2.4.1.c" : { "RULE" : "An object’s statuses do not change unless an effect causes them to change." } ,
+					"2.4.1.d" : { "RULE" : "An object that already has a status cannot gain that status." } ,
+					"2.4.1.e" : { "RULE" : "An object that does not have a status cannot lose that status." } ,
+					"2.4.1.f" : { "RULE" : "Statuses are written as a single, underlined word." } ,
+					"2.4.1.g" : { "RULE" : "Cards in hidden zones do not have statuses." }
+				} } ,
+				"2.4.2" : "Anchored\n- During Rest, an Anchored character is not sent to Reserve.\n- During Rest, an Anchored object loses Anchored." ,
+				"2.4.3" : "Asleep\n- During Progress, an Asleep character’s statistics are not counted in their expedition’s statistics.\n- During Rest, an Asleep character is not sent to Reserve.\n- During Rest, an Asleep object loses Asleep." ,
+				"2.4.4" : { "NAME" : "Boosted" , "CONTENT" : {
+					"2.4.4.a" : { "RULE" : "An object is Boosted if it has at least one boost on it." } ,
+					"2.4.4.b" : { "RULE" : "Objects never directly gain or lose Boosted. This status changes when boosts are added or removed from an object." ,
+						"Remark" : "Characters keep their boost when they change zones, except when they leave the Expedition, so if a player plays a Boosted Character card from their Reserve, that Character enters the Expedition zone Boosted."
+					}
+				} } ,
+				"2.4.5" : { "NAME" : "Exhausted" , "CONTENT" : {
+					"2.4.5.a" : { "RULE" : "Some costs and effects make an object Exhausted." ,
+						"Remark" : "The symbol %T% in the cost of an quick action means “exhaust me” (see Rule 7.1.4.a ). That cost cannot be paid if the object bearing that quick action is already Exhausted."
+					} ,
+					"2.4.5.b" : { "RULE" : "An object that is not Exhausted is ready." }
+				} } ,
+				"2.4.6" : { "NAME" : "Fleeting" , "CONTENT" : {
+					"2.4.6.a" : { "RULE" : "When a Character is played from Reserve, it gains Fleeting as it enters Limbo." } ,
+					"2.4.6.b" : { "RULE" : "When a Fleeting Character in Limbo resolves, it gains Fleeting as it enters the Expedition zone." } ,
+					"2.4.6.c" : { "RULE" : "If a Fleeting Character would go to the Reserve from the Expedition zone, it goes to the Discard pile instead." } ,
+					"2.4.6.d" : { "RULE" : "When a Spell is played from Reserve, it gains Fleeting as it enters Limbo." } ,
+					"2.4.6.e" : { "RULE" : "Some spells have Fleeting as an ability. When such a spell is played from anywhere, it gains the status Fleeting as it enters Limbo." } ,
+					"2.4.6.f" : { "RULE" : "When a Fleeting Spell in Limbo is done resolving, it goes to the Discard pile instead of the Reserve." }
+				} }
+			} } ,
+			"2.5" : { "NAME" : "Counters" , "CONTENT" : {
+				"2.5.a" : { "RULE" : "Objects may have counters on them." } ,
+				"2.5.b" : { "RULE" : "Counters have names." } ,
+				"2.5.c" : { "RULE" : "Counters with the same name on the same object are indistinguishable." } ,
+				"2.5.d" : { "RULE" : "Some Heroes start the game with counters. Such counters are on the Hero from the moment it is revealed and placed in the Hero zone." } ,
+				"2.5.e" : { "RULE" : "Some steps have an object “gain [X] [name] counters”. After the resolution of such a step, that object has [X] more [name] counters than before." } ,
+				"2.5.f" : { "RULE" : "Some steps “remove [X] [name] counters”. After the resolution of such a step, if that object had [X] or less [name] counters, it has now zero [name] counters; if it had more than [X] [name] counters, that object has now [X] less [name] counters than before." } ,
+				"2.5.g" : { "RULE" : "Some objects have quick actions whose costs include “spending [X] of their [name] counters”. In order to pay such costs, the object in question must have at least [X] [name] counters. Once the cost is paid, it has [X] less [name] counters." } ,
+				"2.5.h" : { "RULE" : "Most counters have no intrinsic impact on the game." } ,
+				"2.5.i" : { "RULE" : "When an object leaves the Expedition zone or the Landmark zone, it loses all its counters" } ,
+				"2.5.j" : { "RULE" : "When an object leaves the Discard pile, the Reserve, or the Limbo, it keeps its counters." } ,
+				"2.5.1" : { "NAME" : "Boost counters" , "CONTENT" : {
+					"2.5.1.a" : { "RULE" : "Boost counters, also called +1/+1/+1 counters are a specific type of counters." } ,
+					"2.5.1.b" : { "RULE" : "If a Character has boost counters, each of them adds 1 to each of its statistics." }
+				} } 
 			} }
-
 		} }	
 	} ,
 	"GLOSSARY" : {
